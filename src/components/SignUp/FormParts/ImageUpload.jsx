@@ -3,6 +3,7 @@ import React from 'react'
 import styles from '../SignUp.module.scss';
 import { CustomInputLabel } from '../../mui/InputLabel';
 import { CustomOutlinedInput } from '../../mui/OutlinedInput';
+import { getFileName } from '../../../utils/getFileName';
 
 export default function ImageUpload({formik}) {
   return (

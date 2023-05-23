@@ -35,7 +35,7 @@ export const SignUp = ({registerUser, registrationError, positions}) => {
       validationSchema,
       onSubmit: (values) => {
         const formData = new FormData();
-        formData.append('name', values.userName);
+        formData.append('name', values.userName.trim());
         formData.append('email', values.userEmail);
         formData.append('phone', values.userPhone);
         formData.append('photo', values.userFile);
